@@ -56,6 +56,24 @@ table {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+/* form  */
+form[name="create"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+form[name="create"] input[type="text"],
+form[name="create"] input[type="url"] {
+  width: 100%;
+}
+
+form[name="create"] td textarea {
+  margin: 0 auto; /* This centers the textarea horizontally */
+}
+
+
 /* Zebra striping pattern */
 
 tbody tr:nth-child(odd) {
@@ -83,7 +101,13 @@ table th:nth-child(5), table td:nth-child(5) {
   text-overflow: ellipsis;
 }
 
-/* Scale down images  */
+/* form  */
+form label {
+  border: 1px solid red;
+}
+
+
+/* Scale down images */
 
 img {
   object-fit: scale-down;

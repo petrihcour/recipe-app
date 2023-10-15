@@ -71,28 +71,32 @@ function RecipeCreate({ createRecipe }) {
               </label>
             </td>
             <td>
-              <label htmlFor="ingredients">
-                <textarea 
-                name="ingredients" 
-                id="ingredients"
-                placeholder="Ingredients"
-                required={true}
-                onChange={handleChange}
-                value={recipeForm.ingredients} 
-                />
-              </label>
+              <div class="textarea-container">
+                <label htmlFor="ingredients">
+                  <textarea
+                    name="ingredients"
+                    id="ingredients"
+                    placeholder="Ingredients"
+                    required={true}
+                    onChange={handleChange}
+                    value={recipeForm.ingredients}
+                  />
+                </label>
+              </div>
             </td>
             <td>
-              <label htmlFor="preparation">
-                <textarea 
-                name="preparation"
-                id="preparation"
-                placeholder="Preparation"
-                required={true}
-                onChange={handleChange}
-                value={recipeForm.preparation}
-                />
-              </label>
+              <div class="textarea-container">
+                <label htmlFor="preparation">
+                  <textarea
+                    name="preparation"
+                    id="preparation"
+                    placeholder="Preparation"
+                    required={true}
+                    onChange={handleChange}
+                    value={recipeForm.preparation}
+                  />
+                </label>
+              </div>
             </td>
             <td>
               <button type="submit">Create</button>

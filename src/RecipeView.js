@@ -4,7 +4,7 @@ import React from "react";
 
 function RecipeView({ recipe, deleteRecipe }) {
     return (
-        <tr className="recipe">
+        <tr className="recipe-view">
            <td>{recipe.name}</td>
            <td>{recipe.cuisine}</td>
            <td>{recipe.photo && recipe.photo.includes("http") ? (
