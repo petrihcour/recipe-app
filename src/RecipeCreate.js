@@ -71,8 +71,8 @@ function RecipeCreate({ createRecipe }) {
               </label>
             </td>
             <td>
-              <div class="textarea-container">
                 <label htmlFor="ingredients">
+                  <div class="textarea-container">
                   <textarea
                     name="ingredients"
                     id="ingredients"
@@ -81,12 +81,12 @@ function RecipeCreate({ createRecipe }) {
                     onChange={handleChange}
                     value={recipeForm.ingredients}
                   />
+                  </div>
                 </label>
-              </div>
             </td>
             <td>
-              <div class="textarea-container">
                 <label htmlFor="preparation">
+                <div class="textarea-container">
                   <textarea
                     name="preparation"
                     id="preparation"
@@ -95,8 +95,8 @@ function RecipeCreate({ createRecipe }) {
                     onChange={handleChange}
                     value={recipeForm.preparation}
                   />
+                  </div>
                 </label>
-              </div>
             </td>
             <td>
               <button type="submit">Create</button>
