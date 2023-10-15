@@ -2,23 +2,23 @@ import React from "react";
 import RecipeView from "./RecipeView";
 
 function RecipeList({ recipes, deleteRecipe }) {
-  const rows = recipes.map(({recipeName, cuisine, photo, ingredients, preparation}, index) => (
+  const rows = recipes.map(({name, cuisine, photo, ingredients, preparation}, index) => (
     <tr key={index}>
-      <td>
-        {recipeName}
-      </td>
-      <td>
+      <th>
+        {name}
+      </th>
+      <th>
         {cuisine}
-      </td>
-      <td>
+      </th>
+      <th>
         {photo}
-      </td>
-      <td>
+      </th>
+      <th>
         {ingredients}
-      </td>
-      <td>
+      </th>
+      <th>
         {preparation}
-      </td>
+      </th>
     </tr>
   ))
   // TODO: Display the list of recipes using the structure of table that is provided.
@@ -29,17 +29,14 @@ function RecipeList({ recipes, deleteRecipe }) {
     <div className="recipe-list">
       <table>
         <thead>
-          <tr>
-            <th>Name</th>
-            <th>Cuisine</th>
-            <th>Photo</th>
-            <th>Ingredients</th>
-            <th>Preparation</th>
-            <th>Actions</th>
-          </tr>
+          {rows}
         </thead>
         <tbody>
-        {rows}
+          {recipes.map((recipe, index) => (
+            <RecipeView deleteRecipe={() => deleteRecipe(index)}
+            key={index}
+            recipe={recipes} />
+          ))}
         </tbody>
       </table>
     </div>
