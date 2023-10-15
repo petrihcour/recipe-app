@@ -2,7 +2,7 @@ import React from "react";
 
 function RecipeView({ recipe, deleteRecipe }) {
     return (
-        <tr className="recipe">
+        <tbody className="recipe">
            <td>{recipe.name}</td>
            <td>{recipe.cuisine}</td>
            <td>{recipe.photo && recipe.photo.includes("http") ? (
@@ -16,7 +16,7 @@ function RecipeView({ recipe, deleteRecipe }) {
            <td>
             <button name="delete" onClick={deleteRecipe}>Delete</button>
            </td>
-        </tr>
+        </tbody>
     )
 }
 
