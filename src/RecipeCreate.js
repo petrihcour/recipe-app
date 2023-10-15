@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function RecipeCreate() {
+function RecipeCreate({ createRecipe }) {
   const initialFormState = {
     name: "",
     cuisine: "",
@@ -94,7 +94,7 @@ function RecipeCreate() {
               </label>
             </td>
             <td>
-              <button type="submit">Create</button>
+              <button type="submit" onClick={createRecipe}>Create</button>
             </td>
           </tr>
         </tbody>
