@@ -95,7 +95,7 @@ function RecipeCreate({ createRecipe }) {
               </label>
             </td>
             <td>
-              <button type="submit" onClick={createRecipe}>Create</button>
+              <button type="submit">Create</button>
             </td>
           </tr>
         </tbody>
