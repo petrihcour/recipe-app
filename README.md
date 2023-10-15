@@ -5,7 +5,7 @@ This Recipe App will allow a user to add new recipes, display a list of recipes 
 #### A screenshot of my Recipe Tracking Application: 
 ![A screenshot of my Recipe Tracking Application](/public/1A17DAC7-9D6D-4982-924F-146E5679435C.jpeg)
 
-###Specific Instructions
+### Specific Instructions
 Find the TODO comments in the code and create the necessary functionality. Below is a list of specific items needed to complete this lesson.
 
 The app will display a recipe's name, cuisine, photo, ingredients, preparation instructions and action buttons (delete).
