@@ -4,6 +4,15 @@
   padding: 1em;
 }
 
+/* Adjusted font, size, and alignment */
+
+h1 {
+  font-family: 'Playfair Display SC', sans-serif;
+  text-align: center;
+  font-size: 64px;
+  margin-top: 15px;
+}
+
 label {
   display: inline-block;
   width: 100px;
