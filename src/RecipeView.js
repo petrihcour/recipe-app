@@ -1,5 +1,7 @@
 import React from "react";
 
+// Component that displays a single recipe
+
 function RecipeView({ recipe, deleteRecipe }) {
     return (
         <tr className="recipe">

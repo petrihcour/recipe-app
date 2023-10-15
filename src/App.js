@@ -9,15 +9,12 @@ function App() {
 
   // Create a recipe and add it to the end of the list. 
 
-  const createRecipe = (value) => {
-    setRecipes((currentRecipe) => [
-      ...currentRecipe,
-      value,
-    ]);
+  const createRecipe = (newRecipe) => {
+    setRecipes([...recipes, newRecipe])
   }
 
   // Delete a recipe 
-  
+
   const deleteRecipe = (indexToDelete) => setRecipes((currentRecipe) => currentRecipe.filter((recipes, index) => index !== indexToDelete)
   );
   
